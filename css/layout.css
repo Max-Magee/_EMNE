@@ -1,0 +1,56 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 5px solid green;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlogo {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 15px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-top: 100px;
+}
+
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile_sec {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.profile_vec {
+  grid-area: 1/1;
+  z-index: 1;
+}
+
+.profilestats {
+  grid-area: 1/1;
+}
+
+.feedgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.feedgrid > p {
+  border: 2px solid black;
+  max-width: 200px;
+}

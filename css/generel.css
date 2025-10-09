@@ -1,0 +1,49 @@
+* {
+  background-color: grey;
+}
+section {
+  border: 4px solid red;
+  border-radius: 10%;
+}
+.GRbtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #de3232;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.GRbtn:hover {
+  background-color: #54181a;
+}
+
+.glitchlist li {
+  border: 2px solid black;
+}
+
+.questboard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.questboard img {
+  grid-area: 1/1;
+}
+
+.questboard div {
+  grid-area: 1/1;
+  justify-items: left;
+  align-content: center;
+}
+
+@font-face {
+  font-family: "hey";
+  src: url(../fonts/AudioNugget.ttf);
+}
+
+h1 {
+  font-family: "hey";
+  color: white;
+}
