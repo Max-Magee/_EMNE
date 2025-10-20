@@ -38,11 +38,9 @@ body {
 }
 
 .profile_sec {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .profile_card {
@@ -66,6 +64,11 @@ body {
   color: #b7ffff;
   font-family: "cool";
   text-shadow: 0 0 6px #0ff;
+}
+
+.profilescreen {
+  max-height: 420px;
+  justify-items: end;
 }
 
 .glitch_card {
@@ -136,10 +139,23 @@ body {
 .feedgrid li:hover {
   transform: scale(1.1);
 }
+.questboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+}
 
 .quest_card > p {
   background-color: gray;
   border-radius: 10px;
   padding: 24px;
   width: 200px;
+}
+
+.glitch_rep_card {
+  display: block;
+}
+
+.glitchscreen {
+  max-height: 560px;
 }

@@ -1,10 +1,11 @@
 .GRbtn {
-  display: inline-block;
-  padding: 10px 20px;
+  font-family: "small";
+  width: 240px;
+  height: 60px;
   background-color: #de3232;
   color: white;
   text-align: center;
-  text-decoration: none;
+
   border-radius: 5px;
 }
 
@@ -27,15 +28,15 @@
 
 @font-face {
   font-family: "hey";
-  src: url(../fonts/AudioNugget.ttf);
+  src: url(/fonts/AudioNugget.ttf);
 }
 @font-face {
   font-family: "small";
-  src: url(../fonts/CoralPixels-Regular.woff);
+  src: url(/fonts/CoralPixels-Regular.woff);
 }
 @font-face {
   font-family: "cool";
-  src: url(../fonts/PressStart2P-Regular.ttf);
+  src: url(/fonts/PressStart2P-Regular.ttf);
 }
 h1 {
   font-family: "hey";

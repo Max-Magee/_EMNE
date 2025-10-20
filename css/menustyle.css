@@ -114,6 +114,16 @@ nav {
   .purplescreen {
     width: 400px;
   }
+
+  .glitchbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+  }
+  .glitch_rep_card {
+    display: block;
+    justify-self: center;
+  }
 }
 
 @media screen and (width < 799px) {
@@ -131,6 +141,13 @@ nav {
   }
   .profile_vec img {
     display: block;
+    position: static;
     justify-self: center;
+  }
+  .glitch_rep_card {
+    display: block;
+    scale: 80%;
+    justify-self: center;
+    transition: width 0.5s ease;
   }
 }
