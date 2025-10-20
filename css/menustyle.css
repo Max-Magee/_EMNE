@@ -7,6 +7,7 @@
 nav {
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 
 .menu {
@@ -31,6 +32,7 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
+  z-index: 100;
 }
 
 .menu a:hover {
@@ -86,7 +88,7 @@ nav {
     left: 0;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 100;
   }
 
   nav.active .menu li {
@@ -95,5 +97,40 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+}
+
+.purplescreen {
+  width: 800px;
+  transition: width 0.5s ease, padding 0.3s ease;
+}
+.profilestats {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1180px) {
+  .purplescreen {
+    width: 400px;
+  }
+}
+
+@media screen and (width < 799px) {
+  .purplescreen {
+    width: 400px;
+    transition: width 0.5s ease, padding 0.3s ease;
+  }
+  .purplefeed {
+    margin-bottom: 80px;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+  }
+  .profile_vec img {
+    display: block;
+    justify-self: center;
   }
 }

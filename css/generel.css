@@ -1,10 +1,3 @@
-* {
-  background-color: grey;
-}
-section {
-  border: 4px solid red;
-  border-radius: 10%;
-}
 .GRbtn {
   display: inline-block;
   padding: 10px 20px;
@@ -19,31 +12,45 @@ section {
   background-color: #54181a;
 }
 
-.glitchlist li {
-  border: 2px solid black;
-}
+.smallbtn {
+  display: inline-block;
 
-.questboard {
-  display: grid;
-  grid-template-columns: 1fr;
+  background-color: #d7d130;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
 }
-
-.questboard img {
-  grid-area: 1/1;
-}
-
-.questboard div {
-  grid-area: 1/1;
-  justify-items: left;
-  align-content: center;
+.smallbtn:hover {
+  background-color: #de3232;
 }
 
 @font-face {
   font-family: "hey";
   src: url(../fonts/AudioNugget.ttf);
 }
-
+@font-face {
+  font-family: "small";
+  src: url(../fonts/CoralPixels-Regular.woff);
+}
+@font-face {
+  font-family: "cool";
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
 h1 {
   font-family: "hey";
+  color: white;
+}
+h2 {
+  font-family: "cool";
+  color: white;
+}
+p,
+h3 {
+  font-family: "small";
+  color: white;
+}
+li {
+  font-family: "cool";
   color: white;
 }
