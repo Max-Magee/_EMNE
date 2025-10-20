@@ -28,15 +28,15 @@
 
 @font-face {
   font-family: "hey";
-  src: url(/fonts/AudioNugget.woff);
+  src: url(../fonts/AudioNugget.woff);
 }
 @font-face {
   font-family: "small";
-  src: url(/fonts/CoralPixels-Regular.woff);
+  src: url(../fonts/CoralPixels-Regular.woff);
 }
 @font-face {
   font-family: "cool";
-  src: url(/fonts/PressStart2P-Regular.ttf);
+  src: url(../fonts/PressStart2P-Regular.ttf);
 }
 .HUGE {
   font-size: 56px;
