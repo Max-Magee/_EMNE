@@ -28,19 +28,23 @@
 
 @font-face {
   font-family: "hey";
-  src: url(/_EMNE/fonts/AudioNugget.woff);
+  src: url(/fonts/AudioNugget.woff);
 }
 @font-face {
   font-family: "small";
-  src: url(/_EMNE/fonts/CoralPixels-Regular.woff);
+  src: url(/fonts/CoralPixels-Regular.woff);
 }
 @font-face {
   font-family: "cool";
-  src: url(/_EMNE/fonts/PressStart2P-Regular.ttf);
+  src: url(/fonts/PressStart2P-Regular.ttf);
+}
+.HUGE {
+  font-size: 56px;
 }
 h1 {
   font-family: "hey";
   color: white;
+  font-size: 32px;
 }
 h2 {
   font-family: "cool";

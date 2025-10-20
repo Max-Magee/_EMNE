@@ -23,12 +23,46 @@ nav ul {
 nav ul li {
   margin: 0 15px;
 }
+.grid1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.grid1 .HUGE {
+  position: fixed;
+  top: 100px;
+}
+
+.indexsection {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginfolder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  position: absolute;
+  top: 450px;
+  z-index: 15;
+}
 
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin-top: 100px;
-  background-image: url(/_EMNE/imgs/svg/måske\ baggrund_2.svg);
+  background-image: url(/imgs/svg/måske\ baggrund_2.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -41,6 +75,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  padding: 1.5rem;
+  margin: 0 2rem;
 }
 
 .profile_card {
@@ -154,8 +190,17 @@ body {
 
 .glitch_rep_card {
   display: block;
+  padding: 1.5rem;
+  margin: 0 2rem;
+  justify-self: center;
 }
-
 .glitchscreen {
-  max-height: 560px;
+  width: 300px;
+  justify-self: center;
+  background: #2b1235;
+  border: 4px solid #d03e89;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 0 2rem;
+  box-shadow: 0 0 25px rgba(208, 62, 137, 0.5);
 }

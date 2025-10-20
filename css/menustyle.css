@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 nav {
   display: flex;
@@ -109,6 +112,9 @@ nav {
   top: 20%;
   left: 50%;
 }
+.profilescreen {
+  width: 700px;
+}
 
 @media screen and (min-width: 800px) and (max-width: 1180px) {
   .purplescreen {
@@ -119,10 +125,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr);
-  }
-  .glitch_rep_card {
-    display: block;
-    justify-self: center;
   }
 }
 
@@ -144,10 +146,14 @@ nav {
     position: static;
     justify-self: center;
   }
-  .glitch_rep_card {
+  .glitch_rep_card img {
     display: block;
     scale: 80%;
     justify-self: center;
-    transition: width 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .glitch_rep_card h1 {
+    display: block;
+    justify-self: center;
   }
 }
