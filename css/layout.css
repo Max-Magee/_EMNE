@@ -106,17 +106,23 @@ body {
   max-height: 420px;
   justify-items: end;
 }
+.profilequests {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  gap: 20px;
+}
 
 .glitch_card {
   padding: 1rem;
   text-align: center;
 }
+
 .glitchlist li {
   list-style: none;
-
+  text-align: right;
   padding: 1rem;
   color: rgba(208, 62, 137, 0.6);
-  font-family: "small";
 }
 
 .GRbtn {
@@ -126,10 +132,25 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-family: "cool";
+  font-family: "small";
 }
 
 .GRbtn:hover {
+  background-color: #54181a;
+}
+.report {
+  text-align: center;
+  justify-self: center;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #ff5b5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "small";
+  font-size: 32px;
+}
+.report:hover {
   background-color: #54181a;
 }
 
@@ -143,6 +164,7 @@ body {
   box-shadow: 0 0 25px rgba(208, 62, 137, 0.5);
 }
 .purplefeed {
+  padding-top: 0;
   max-height: 500px;
   overflow-y: auto;
 }
@@ -167,7 +189,7 @@ body {
   border-radius: 10px;
   padding: 1rem;
   color: #b7ffff;
-  font-family: "small";
+  font-family: "cool";
   box-shadow: inset 0 0 10px rgba(142, 245, 245, 0.3);
   transition: transform 0.2s;
 }
@@ -179,6 +201,13 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   justify-self: center;
+  gap: 20px;
+}
+
+.quest_card {
+  display: flex;
+  align-items: center;
+  gap: 140px;
 }
 
 .quest_card > p {
@@ -186,17 +215,62 @@ body {
   border-radius: 10px;
   padding: 24px;
   width: 200px;
+  margin: 0;
+  transition: 0.5s ease;
+}
+.quest_card > p:hover {
+  transform: scale(1.6);
+}
+
+.quest_card .smallbtn {
+  padding: 8px 16px;
+  width: 160px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+}
+.buttongroup {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+@media screen and (min-width: 800px) and (max-width: 1180px) {
+  .buttongroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .quest_card {
+    gap: 45px;
+  }
+  .quest_card .smallbtn {
+    width: 100px;
+  }
+}
+@media screen and (width < 799px) {
+  .buttongroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .quest_card {
+    gap: 45px;
+  }
+  .quest_card .smallbtn {
+    width: 100px;
+  }
 }
 
 .glitch_rep_card {
   display: block;
-  padding: 1.5rem;
-  margin: 0 2rem;
+
   justify-self: center;
 }
 .glitchscreen {
   width: 300px;
-  justify-self: center;
+  height: 200px;
+  overflow-y: scroll;
+  justify-self: right;
   background: #2b1235;
   border: 4px solid #d03e89;
   border-radius: 12px;

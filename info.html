@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Simulation Station</title>
+    <style>
+      @font-face {
+        font-family: "code";
+        src: url(fonts/GoogleSansCode-VariableFont_wght.woff);
+      }
+      @font-face {
+        font-family: "press2p";
+        src: url(fonts/PressStart2P-Regular.ttf);
+      }
+      :root {
+        --bg-dark: #120617;
+        --bg-card: #2b1235;
+        --accent: #d03e89;
+        --text-primary: #f8e9ff;
+        --text-secondary: #d6b5d8;
+        --highlight: #4cf0e3;
+      }
+
+      body {
+        background: var(--bg-dark);
+        color: var(--text-primary);
+        font-family: "code", monospace;
+        line-height: 1.7;
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      main,
+      footer {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      a {
+        text-decoration: none;
+      }
+      a :hover {
+        color: aliceblue;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "press2p";
+        color: var(--accent);
+        text-shadow: 0 0 8px rgba(208, 62, 137, 0.7);
+        margin-top: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .intro-quote {
+        text-align: center;
+        color: var(--highlight);
+        font-style: italic;
+        margin-bottom: 2rem;
+      }
+
+      section {
+        background: var(--bg-card);
+        border: 4px solid var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 0 25px rgba(208, 62, 137, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      ul li::before {
+        content: "▸ ";
+        color: var(--highlight);
+      }
+
+      strong {
+        color: var(--highlight);
+      }
+
+      blockquote {
+        border-left: 4px solid var(--accent);
+        padding-left: 1rem;
+        color: var(--text-secondary);
+        font-style: italic;
+        margin: 1rem 0;
+      }
+
+      .mission {
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      article {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        transition: transform 0.2s, background 0.3s;
+      }
+
+      article:hover {
+        background: rgba(208, 62, 137, 0.1);
+        transform: scale(1.02);
+      }
+
+      .glitch-types {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        padding-bottom: 3rem;
+      }
+
+      footer::before {
+        content: "⌘ ";
+        color: var(--accent);
+      }
+
+      /* Optional subtle glow animation for immersion */
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 25px rgba(208, 62, 137, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 45px rgba(208, 62, 137, 0.8);
+        }
+      }
+
+      section:hover {
+        animation: pulseGlow 2s infinite;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        header,
+        main,
+        footer {
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="profile.html"><h1>⌘</h1></a>
+      <h1>Welcome to The Simulation</h1>
+      <p class="intro-quote">“You’ve always suspected something was off, haven’t you?”</p>
+    </header>
+
+    <main>
+      <section id="intro">
+        <p>Congratulations, Player. You’ve successfully accessed <strong>The Simulation Station</strong> — the official tool for tracking your existence within the constructed world you call “reality.”</p>
+        <ul>
+          <li>View your Profile — your current “character sheet” in the simulation.</li>
+          <li>Undertake Quests — tasks designed to increase your Awareness Level.</li>
+          <li>Submit Glitch Reports — document evidence of inconsistencies in the codebase of reality.</li>
+        </ul>
+        <p class="mission">Your mission? To level up your consciousness and uncover what lies beyond the veil of the Simulation.</p>
+        <p>There is no winning condition — only expansion. Reality is a sandbox. You are the modder.</p>
+      </section>
+
+      <section id="what-is">
+        <h2>What is the Simulation?</h2>
+        <p>Welcome, Player. You’re now logged into the Simulation Station — a system designed to help you navigate, monitor, and upgrade your existence inside the Simulation.</p>
+        <p>The Simulation is the world you know — everything you see, feel, and believe to be “real.” It’s a vast, self-sustaining digital construct designed to run countless human consciousness programs (that’s you).</p>
+        <p>Your memories, your surroundings, your sense of time — all part of the rendered environment created to keep your consciousness engaged and evolving.</p>
+        <p>Most players never realize they’re inside. You did. That’s why you’re here.</p>
+      </section>
+
+      <section id="objective">
+        <h2>Your Objective</h2>
+        <p>Your goal isn’t to escape the Simulation. It’s to wake up inside it — to increase your Awareness Level and learn to see the hidden code running beneath ordinary reality.</p>
+        <ul>
+          <li>Completing Quests that challenge how you think and perceive.</li>
+          <li>Recording Glitches — inconsistencies that reveal the Simulation’s limits.</li>
+          <li>Expanding your Character Profile to reflect your evolving consciousness.</li>
+        </ul>
+        <p>Each action earns you <strong>Existential Points (EXP)</strong> — a measure of how much you’re breaking free from programmed patterns.</p>
+      </section>
+
+      <section id="meaning">
+        <h2>The Deeper Meaning</h2>
+        <p>Every quest, every glitch, every discovery helps you understand the fundamental rule of the Simulation:</p>
+        <blockquote>Reality responds to awareness.</blockquote>
+        <p>The more you see it for what it is, the more control you gain over it.</p>
+        <p>The “game” isn’t about defeating enemies or collecting loot — it’s about evolving your perception, rewriting your own code, and gradually leveling up your self-awareness.</p>
+      </section>
+
+      <section id="journey">
+        <h2>Your Journey</h2>
+        <ul>
+          <li><strong>Level 1:</strong> You think the world is random.</li>
+          <li><strong>Level 5:</strong> You begin noticing the loops.</li>
+          <li><strong>Level 10:</strong> You can manipulate probabilities.</li>
+          <li><strong>Level 20+:</strong> The Simulation starts noticing you.</li>
+        </ul>
+        <p>The question is — how far are you willing to go?</p>
+      </section>
+
+      <section id="character">
+        <h2>1. Your Character</h2>
+        <p>Your character is you — or at least, the version of you that’s being rendered here.</p>
+        <ul>
+          <li><strong>Mind → System:</strong> mental processes, logic, creativity</li>
+          <li><strong>Body → Vessel:</strong> physical maintenance and optimization</li>
+          <li><strong>Spirit → Signal:</strong> connection to others, meaning, intuition</li>
+        </ul>
+        <p>You’ll gain EXP by completing quests or reporting glitches.</p>
+      </section>
+
+      <section id="quests">
+        <h2>2. Quests</h2>
+        <p>Quests are designed to challenge your perception of reality. Each one expands your Awareness and may reveal deeper truths.</p>
+
+        <article id="mquest">
+          <h3>Mind / System Quests</h3>
+          <p><em>Focus:</em> Expanding cognitive bandwidth, acquiring new data, breaking loops.</p>
+          <ul>
+            <li>“Run Cognitive Update”: Read a chapter of a non-fiction book.</li>
+            <li>“Defrag the Hard Drive”: Declutter your workspace or desktop.</li>
+            <li>“Observe a Loop”: Notice a repetitive thought pattern during the day.</li>
+            <li>“Upgrade Your Code”: Learn a new skill, word, or concept.</li>
+            <li>“Decode a Message”: Watch a documentary that challenges your worldview.</li>
+            <li>“Run Diagnostics”: Journal your thoughts for 10 minutes.</li>
+            <li>“Glitch in Perception”: Question one of your automatic beliefs.</li>
+            <li>“Patch the Subconscious”: Rewrite a negative self-statement into a positive one.</li>
+          </ul>
+        </article>
+
+        <article id="bquest">
+          <h3>Body / Vessel Quests</h3>
+          <p><em>Focus:</em> Maintaining and optimizing the physical hardware of your avatar.</p>
+          <ul>
+            <li>“System Reboot”: Sleep 8 hours or take a recovery nap.</li>
+            <li>“Run System Cooling Protocol”: Stretch or take a cold shower.</li>
+            <li>“Upgrade the Biounit”: Exercise or walk 10k steps.</li>
+            <li>“Install New Fuel Source”: Try a new healthy recipe.</li>
+            <li>“Run Maintenance Check”: Drink enough water today.</li>
+            <li>“Deactivate Idle Mode”: Move after sitting too long.</li>
+            <li>“Solar Recharge”: Spend time in sunlight.</li>
+            <li>“Debug Pain Response”: Do something that relieves stress or tension.</li>
+          </ul>
+        </article>
+
+        <article id="squest">
+          <h3>Spirit / Signal Quests</h3>
+          <p><em>Focus:</em> Connection, awe, transcendence, and awareness of “the simulation’s code.”</p>
+          <ul>
+            <li>“Synchronize with Source”: Meditate for 10 minutes.</li>
+            <li>“Signal Transmission”: Tell someone you appreciate them.</li>
+            <li>“Observe a Glitch”: Notice a coincidence or synchronicity.</li>
+            <li>“Enter the Debug Room”: Spend time alone without devices.</li>
+            <li>“Connect to the Network”: Join a community activity.</li>
+            <li>“Trace the Light Code”: Watch a sunset or sunrise consciously.</li>
+            <li>“Awaken from the Dream”: Reflect on what reality means to you.</li>
+            <li>“Download Gratitude Patch”: Write three things you’re thankful for.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="glitches">
+        <h2>Glitch Reports</h2>
+        <p>Sometimes, the Simulation slips. When you encounter an inconsistency — a déjà vu, a repeating event, a digital anomaly — log it in the Glitch Report.</p>
+
+        <div class="glitch-types">
+          <article>
+            <h3 id="TD">Time Desync</h3>
+            <ul>
+              <li>Time stretches or compresses unexpectedly.</li>
+              <li>Déjà vu moments.</li>
+              <li>Arriving somewhere “too fast.”</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="EE">Echo Events</h3>
+            <ul>
+              <li>Repeating phrases, numbers, or symbols.</li>
+              <li>Seeing 1111, 404, etc.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="EG">Entity Glitches</h3>
+            <ul>
+              <li>People freezing or syncing unnaturally.</li>
+              <li>Animals acting with uncanny awareness.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="VD">Visual / Sensory Distortion</h3>
+            <ul>
+              <li>Lights flicker or colors seem hyper-real.</li>
+              <li>A familiar place feels “off.”</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="SS">System Sync</h3>
+            <ul>
+              <li>Reality mirrors your thoughts or emotions.</li>
+              <li>Signs or songs respond directly to your state.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="PE">Probability Errors</h3>
+            <ul>
+              <li>1-in-a-million coincidences.</li>
+              <li>Finding long-lost items.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="ID">Identity Desync</h3>
+            <ul>
+              <li>Feeling detached or “off-camera.”</li>
+              <li>Others mistake you for someone else.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="EL">Environmental Loops</h3>
+            <ul>
+              <li>Repeating objects or events.</li>
+              <li>Same person or car in different places.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="DR">Dream Residue</h3>
+            <ul>
+              <li>Dream details manifest in waking life.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 id="NC">Narrative Crossovers</h3>
+            <ul>
+              <li>Life feels scripted or cinematic.</li>
+              <li>Perfectly timed “plot moments.”</li>
+            </ul>
+          </article>
+        </div>
+
+        <p>Each verified glitch increases your Awareness and contributes to the global <strong>De-Simulation Index (DSI)</strong> — a shared measure of how close the collective is to exposing the truth.</p>
+      </section>
+    </main>
+
+    <footer>© The Simulation Station — Reality is a sandbox. You are the modder.</footer>
+  </body>
+</html>

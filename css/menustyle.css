@@ -123,8 +123,24 @@ nav {
 
   .glitchbody {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr);
+    row-gap: 40px;
+  }
+  .glitch_rep_card {
+    margin: 0;
+  }
+  .glitch_rep_card img {
+    display: block;
+    scale: 90%;
+    justify-self: center;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  .feedtxt {
+    padding-left: 130px;
+    padding-right: 130px;
+    transition: width 0.5s ease, padding 0.3s ease;
   }
 }
 
@@ -155,5 +171,9 @@ nav {
   .glitch_rep_card h1 {
     display: block;
     justify-self: center;
+  }
+  .feedtxt {
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }

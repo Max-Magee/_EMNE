@@ -1,5 +1,7 @@
 .GRbtn {
+  justify-self: center;
   font-family: "small";
+  font-size: 24px;
   width: 240px;
   height: 60px;
   background-color: #de3232;
@@ -7,6 +9,9 @@
   text-align: center;
 
   border-radius: 5px;
+}
+.questboard .GRbtn {
+  justify-self: right;
 }
 
 .GRbtn:hover {
@@ -33,13 +38,32 @@
 @font-face {
   font-family: "small";
   src: url(../fonts/CoralPixels-Regular.woff);
+  font-size: 60px;
 }
 @font-face {
   font-family: "cool";
   src: url(../fonts/PressStart2P-Regular.ttf);
 }
+@font-face {
+  font-family: "code";
+  src: url(../fonts/GoogleSansCode-VariableFont_wght.woff);
+}
+
 .HUGE {
   font-size: 56px;
+}
+.feedtxt {
+  position: sticky;
+  top: 0;
+  justify-self: center;
+  background: rgba(208, 62, 137);
+  margin: 0;
+  padding-left: 330px;
+  padding-right: 330px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  z-index: 25;
+  transition: width 0.5s ease, padding 0.3s ease;
 }
 h1 {
   font-family: "hey";
@@ -49,13 +73,24 @@ h1 {
 h2 {
   font-family: "cool";
   color: white;
+  font-weight: 50;
 }
-p,
 h3 {
   font-family: "small";
   color: white;
+  font-size: 40px;
+  padding-bottom: 12px;
 }
-li {
+li,
+p {
   font-family: "cool";
   color: white;
+}
+
+.glitchlist a {
+  color: white;
+}
+
+.glitchlist a:hover {
+  color: red;
 }
