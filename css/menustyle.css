@@ -107,15 +107,19 @@ nav {
   width: 800px;
   transition: width 0.5s ease, padding 0.3s ease;
 }
-.profilestats {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-}
+
 .profilescreen {
+  display: grid;
+  grid-template-rows: 3;
   width: 700px;
 }
 
+.glitchbody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr);
+  row-gap: 40px;
+}
 @media screen and (min-width: 800px) and (max-width: 1180px) {
   .purplescreen {
     width: 400px;
@@ -127,9 +131,7 @@ nav {
     grid-template-rows: repeat(1fr);
     row-gap: 40px;
   }
-  .glitch_rep_card {
-    margin: 0;
-  }
+
   .glitch_rep_card img {
     display: block;
     scale: 90%;
@@ -138,8 +140,8 @@ nav {
     transition: 0.5s ease;
   }
   .feedtxt {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 150px;
+    padding-right: 150px;
     transition: width 0.5s ease, padding 0.3s ease;
   }
 }
@@ -173,7 +175,13 @@ nav {
     justify-self: center;
   }
   .feedtxt {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .glitchbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    row-gap: 40px;
   }
 }

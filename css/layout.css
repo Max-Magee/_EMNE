@@ -80,26 +80,36 @@ body {
 }
 
 .profile_card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   position: relative;
-  display: inline-block;
 }
 
 .profile_vec {
-  display: block;
+  grid-column: 1/2;
+  grid-row: 1/2;
   z-index: 0;
 }
 
 .profile_vec img {
-  display: block;
-
   position: static;
 }
 
 .profilestats {
+  margin-top: 30px;
+  justify-self: center;
+  text-align: right;
+  grid-column: 1/2;
+  grid-row: 1/2;
   z-index: 1;
   color: #b7ffff;
   font-family: "cool";
   text-shadow: 0 0 6px #0ff;
+  padding: 40px;
+}
+.profilestats h2 {
+  margin-bottom: 5em;
 }
 
 .profilescreen {
@@ -156,7 +166,7 @@ body {
 
 .purplescreen {
   justify-self: center;
-  background: #2b1235;
+  background: #2b1235b3;
   border: 4px solid #d03e89;
   border-radius: 12px;
   padding: 1.5rem;
@@ -167,6 +177,9 @@ body {
   padding-top: 0;
   max-height: 500px;
   overflow-y: auto;
+}
+.purplefeed::-webkit-scrollbar {
+  display: none;
 }
 
 .purplescreen h1 {
@@ -211,15 +224,20 @@ body {
 }
 
 .quest_card > p {
-  background-color: gray;
+  background: #4c3f5e;
+  border: 2px solid #8ef5f5;
   border-radius: 10px;
-  padding: 24px;
-  width: 200px;
-  margin: 0;
-  transition: 0.5s ease;
+  padding: 1rem;
+  color: #b7ffff;
+  font-family: "cool";
+  box-shadow: inset 0 0 10px rgba(142, 245, 245, 0.3);
+  transition: transform 0.2s;
 }
 .quest_card > p:hover {
   transform: scale(1.6);
+}
+.quest_card a {
+  color: #b7ffff;
 }
 
 .quest_card .smallbtn {
@@ -268,13 +286,20 @@ body {
 }
 .glitchscreen {
   width: 300px;
-  height: 200px;
-  overflow-y: scroll;
+
   justify-self: right;
-  background: #2b1235;
+  background: #2b1235b3;
   border: 4px solid #d03e89;
   border-radius: 12px;
   padding: 1.5rem;
   margin: 0 2rem;
+  align-self: center;
   box-shadow: 0 0 25px rgba(208, 62, 137, 0.5);
+}
+
+@media screen and (width < 799px) {
+  .glitchscreen {
+    margin-top: 60px;
+    justify-self: center;
+  }
 }

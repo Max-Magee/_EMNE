@@ -55,11 +55,12 @@
 .feedtxt {
   position: sticky;
   top: 0;
+
   justify-self: center;
   background: rgba(208, 62, 137);
   margin: 0;
-  padding-left: 330px;
-  padding-right: 330px;
+  padding-left: 400px;
+  padding-right: 400px;
   padding-top: 30px;
   padding-bottom: 10px;
   z-index: 25;
@@ -80,6 +81,7 @@ h3 {
   color: white;
   font-size: 40px;
   padding-bottom: 12px;
+  margin-bottom: 0.5em;
 }
 li,
 p {
@@ -87,10 +89,36 @@ p {
   color: white;
 }
 
-.glitchlist a {
+.profilediv a {
   color: white;
 }
 
-.glitchlist a:hover {
+.profilediv a:hover {
   color: red;
+}
+
+.profilediv {
+  justify-self: center;
+  align-self: center;
+  list-style: none;
+  background: #4c3f5e;
+  border: 2px solid #8ef5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #b7ffff;
+  font-family: "cool";
+  box-shadow: inset 0 0 10px rgba(142, 245, 245, 0.3);
+  transition: transform 0.2s;
+}
+
+.profilediv li {
+  color: #b7ffff;
+  margin-bottom: 1em;
+}
+.profilediv a {
+  color: #b7ffff;
+}
+
+strong {
+  color: yellow;
 }
