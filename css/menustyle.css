@@ -110,14 +110,14 @@ nav {
 
 .profilescreen {
   display: grid;
-  grid-template-rows: 3;
+  grid-template-rows: 3fr;
   width: 700px;
 }
 
 .glitchbody {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(1fr);
+
   row-gap: 40px;
 }
 @media screen and (min-width: 800px) and (max-width: 1180px) {
@@ -128,7 +128,7 @@ nav {
   .glitchbody {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr);
+
     row-gap: 40px;
   }
 
@@ -157,7 +157,6 @@ nav {
   body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
   }
   .profile_vec img {
     display: block;
@@ -181,7 +180,7 @@ nav {
   .glitchbody {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
+
     row-gap: 40px;
   }
 }
